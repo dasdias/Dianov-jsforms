@@ -1359,6 +1359,9 @@ fieldset {
 	background-image: -ms-linear-gradient(90deg, #971515 0%, #c93232 100%);
 	color: #fff;
 }
+.notify--error-hide {
+	display: none;
+}
 
 .no-radius-top {
 	border-radius: 0 0 4px 4px;
