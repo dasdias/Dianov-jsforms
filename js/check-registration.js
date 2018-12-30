@@ -81,6 +81,9 @@ $(document).ready(function() {
 			} else {
 				_errorEmailBusydNotify.fadeIn(500);
 			}
+			_email.on('focus', function(){
+				_errorEmailBusydNotify.fadeOut(300);				
+			});
 		} 
 	}
 
