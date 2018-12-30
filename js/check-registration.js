@@ -71,6 +71,9 @@ $(document).ready(function() {
 				_errorEmailFormatNotify.fadeIn(800);
 				_formValid = false;
 			}
+			_email.on('focus', function(){
+				_errorEmailFormatNotify.fadeOut(300);				
+			});
 		}
 
 		// отправка формы если нужный емейл и пароль совпадают
@@ -84,6 +87,9 @@ $(document).ready(function() {
 			_email.on('focus', function(){
 				_errorEmailBusydNotify.fadeOut(300);				
 			});
+			_password.on('focus', function(){
+			_errorEmailBusydNotify.fadeOut(300);				
+		});
 		} 
 	}
 
